@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { baseUrl } from '../utils/baseUrl';
+import { baseUrl } from '@/utils/baseUrl';
 
 const Opengraph = ({ data, locales }) => {
     const { locale, asPath, basePath, query } = useRouter();
