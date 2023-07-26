@@ -1,5 +1,11 @@
-const Header = () => {
-	return <div>Header</div>
-}
+import Logo from '@/components/ui/Logo';
 
-export default Header
+const Header = () => {
+    return (
+        <header className="py-8 px-16">
+            <Logo />
+        </header>
+    );
+};
+
+export default Header;
