@@ -1,16 +1,22 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import { useEffect } from 'react';
 
-const Layout = ({ children }) => {
-	return (
-		<div className='app'>
-			<Header />
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import { useGlobalData } from '@/context/GlobalDataContext';
 
-			<main className='py-3'>{children}</main>
+const Layout = ({ children, globalProps }) => {
+    const { changeGlobalData } = useGlobalData();
 
-			<Footer />
-		</div>
-	)
-}
+    useEffect(() => {
+        changeGlobalData(globalProps);
+    });
+    return (
+        <div>
+            <Header globalProps={globalProps} />
+            <main>{children}</main>
+            <Footer />
+        </div>
+    );
+};
 
-export default Layout
+export default Layout;
