@@ -1,11 +1,11 @@
-import Logo from '@/components/ui/Logo';
-import { useGlobalData } from '@/context/GlobalDataContext';
+import { Logo } from '@/components/ui/Logo';
+import { useGlobalData } from '@/context/GlobalData';
 
 const Header = () => {
     const { globalData } = useGlobalData();
 
     return (
-        <header className="py-8 px-16 flex itesm-center justify-between">
+        <header className="py-8 px-16 flex items-center justify-between">
             <Logo />
             <div className="flex gap-2"></div>
         </header>

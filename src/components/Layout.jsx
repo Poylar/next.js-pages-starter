@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import { useGlobalData } from '@/context/GlobalDataContext';
+import { useGlobalData } from '@/context/GlobalData';
 
 const Layout = ({ children, globalProps }) => {
     const { changeGlobalData } = useGlobalData();

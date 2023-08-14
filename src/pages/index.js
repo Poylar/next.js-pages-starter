@@ -1,6 +1,5 @@
 import { getGlobalData, getPageData } from '@/api/api';
 import Layout from '@/components/Layout';
-import Opengraph from '@/components/meta/Opengraph';
 import Seo from '@/components/meta/Seo';
 import RenderBlock from '@/components/RenderBlock';
 
