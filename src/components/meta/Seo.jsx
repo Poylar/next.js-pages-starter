@@ -1,12 +1,8 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 const Seo = ({ data }) => {
-	return (
-		<Head>
-			<title>{data.longtitle + ' | ' + data.site_name}</title>
-			<meta name='description' content={data.description} />
-		</Head>
-	)
-}
+    return <NextSeo title={data.title} />;
+};
 
-export default Seo
+export default Seo;

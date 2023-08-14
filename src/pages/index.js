@@ -8,7 +8,6 @@ const Page = ({ data, locales, globalProps }) => {
     return (
         <Layout globalProps={globalProps}>
             <Seo data={data.seo} />
-            <Opengraph data={data.seo} locales={locales} />
             {data.blocks.map((block, index) => (
                 <RenderBlock
                     key={index}
